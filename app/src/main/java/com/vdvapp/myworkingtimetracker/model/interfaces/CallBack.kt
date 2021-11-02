@@ -1,0 +1,8 @@
+package com.vdvapp.myworkingtimetracker.model.interfaces
+
+/**
+ * Стандартный интерфейс "ответа"
+ */
+interface CallBack<T> {
+    fun onResult(value: T)
+}
