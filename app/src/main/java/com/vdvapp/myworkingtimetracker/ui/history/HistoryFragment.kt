@@ -1,4 +1,4 @@
-package com.vdvapp.myworkingtimetracker.ui.home
+package com.vdvapp.myworkingtimetracker.ui.history
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.vdvapp.myworkingtimetracker.R
-import com.vdvapp.myworkingtimetracker.databinding.FragmentHomeBinding
+import com.vdvapp.myworkingtimetracker.databinding.FragmentHistoryBinding
 
-class HomeFragment : Fragment() {
+class HistoryFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
-    private var _binding: FragmentHomeBinding? = null
+    private lateinit var historyViewModel: HistoryViewModel
+    private var _binding: FragmentHistoryBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,15 +23,15 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+    ): View {
+        historyViewModel =
+            ViewModelProvider(this).get(HistoryViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentHistoryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
+        val textView: TextView = binding.textGallery
+        historyViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

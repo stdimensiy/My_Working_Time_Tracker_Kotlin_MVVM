@@ -1,4 +1,4 @@
-package com.vdvapp.myworkingtimetracker.ui.gallery
+package com.vdvapp.myworkingtimetracker.ui.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.vdvapp.myworkingtimetracker.R
-import com.vdvapp.myworkingtimetracker.databinding.FragmentGalleryBinding
+import com.vdvapp.myworkingtimetracker.databinding.FragmentMainBinding
 
-class GalleryFragment : Fragment() {
+class MainFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
-    private var _binding: FragmentGalleryBinding? = null
+    private lateinit var mainViewModel: MainViewModel
+    private var _binding: FragmentMainBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,15 +23,15 @@ class GalleryFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
+    ): View {
+        mainViewModel =
+            ViewModelProvider(this).get(MainViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentMainBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
+        val textView: TextView = binding.textHome
+        mainViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
