@@ -23,7 +23,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_assessment_plug" />
+            app:srcCompat="@drawable/ic_assessment_well" />
 
         <TextView
             android:id="@+id/title"
@@ -54,43 +54,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_twotone_cloud_download_24" />
-
-            <ImageView
-                android:id="@+id/imageView_delete"
-                android:layout_width="@dimen/iv_command_width"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/base_margin"
-                android:baselineAlignBottom="false"
-                android:contentDescription="@string/iv_delete_contentDescription"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_twotone_delete_24" />
-
-            <ImageView
-                android:id="@+id/imageView_error"
-                android:layout_width="@dimen/iv_command_width"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/base_margin"
-                android:baselineAlignBottom="false"
-                android:contentDescription="@string/iv_error_contentDescription"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_twotone_error_24" />
-
-            <ImageView
-                android:id="@+id/imageView_unknown"
-                android:layout_width="@dimen/iv_command_width"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/base_margin"
-                android:baselineAlignBottom="false"
-                android:contentDescription="@string/iv_unknown_contentDescription"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_twotone_live_help_24" />
+                app:srcCompat="@drawable/ic_status_is_working" />
 
             <ProgressBar
                 android:id="@+id/progressBar"

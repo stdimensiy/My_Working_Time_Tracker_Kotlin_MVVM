@@ -12,4 +12,7 @@
     <dimen name="cardViewRadius">2dp</dimen>
     <dimen name="iv_plug_width">60dp</dimen>
     <dimen name="iv_plug_height">80dp</dimen>
+    <dimen name="tv_title_textSize">12sp</dimen>
+    <dimen name="cl_command_width">50dp</dimen>
+    <dimen name="iv_command_width">50dp</dimen>
 </resources>

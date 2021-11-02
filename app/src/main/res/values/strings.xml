@@ -11,4 +11,6 @@
     <string name="menu_history">История / табель</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="iv_plug_title">Заглушка аватарки</string>
+    <string name="tv_title_text"><![CDATA[Понедельник: 8:50 ->]]></string>
+    <string name="iv_download_contentDescription">Текущеее действие - работает</string>
 </resources>
