@@ -2,15 +2,14 @@
     <string name="app_name">My Working Time Tracker</string>
     <string name="navigation_drawer_open">Открытие navigation drawer</string>
     <string name="navigation_drawer_close">Закрытие navigation drawer</string>
-    <string name="nav_header_title">Учект рабочего времени</string>
-    <string name="nav_header_subtitle">stdimensiy@yande.ru</string>
+    <string name="nav_header_title">Учет рабочего времени</string>
+    <string name="nav_header_subtitle">stdimensiy@yandex.ru</string>
     <string name="nav_header_desc">Заголовок экрана</string>
     <string name="action_settings">Настройки</string>
-
     <string name="menu_main">Главный</string>
     <string name="menu_history">История / табель</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="iv_plug_title">Заглушка аватарки</string>
     <string name="tv_title_text"><![CDATA[Понедельник: 8:50 ->]]></string>
-    <string name="iv_download_contentDescription">Текущеее действие - работает</string>
+    <string name="iv_download_contentDescription">Текущее действие - работает</string>
 </resources>
