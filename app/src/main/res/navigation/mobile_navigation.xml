@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_main">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/nav_main"
-        android:name="com.vdvapp.myworkingtimetracker.ui.main.MainFragment"
-        android:label="@string/menu_main"
-        tools:layout="@layout/fragment_main" />
+        android:id="@+id/navigation_home"
+        android:name="ru.vdv.myworkingtimetracker.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_history"
-        android:name="com.vdvapp.myworkingtimetracker.ui.history.HistoryFragment"
-        android:label="@string/menu_history"
-        tools:layout="@layout/fragment_history" />
+        android:id="@+id/navigation_dashboard"
+        android:name="ru.vdv.myworkingtimetracker.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.vdvapp.myworkingtimetracker.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/navigation_notifications"
+        android:name="ru.vdv.myworkingtimetracker.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
 </navigation>
